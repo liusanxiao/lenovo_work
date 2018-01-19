@@ -22,5 +22,6 @@ public class SpringBootTest {
 	}
 	
 	public void contextLoads(){
+		System.out.println("hello springboot");
 	}
 }
