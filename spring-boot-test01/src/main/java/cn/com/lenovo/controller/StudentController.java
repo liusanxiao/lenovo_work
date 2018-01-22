@@ -30,4 +30,11 @@ public class StudentController {
 		model.addAttribute("stuList", stuList);
 		return "student";
 	}
+	
+	@RequestMapping("/page/stu/redis")
+	public String showStuListRedis(Model model){
+		List<Student> stuList = stuService.getStuListRedis();
+		model.addAttribute("stuList",stuList);
+		return "student";
+	}
 }
